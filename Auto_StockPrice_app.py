@@ -34,7 +34,7 @@ def get_data(days, tickers):
         df = pd.concat([df, hist])
     return df
 try:
-    st.sidebar.write(""""
+    st.sidebar.write("""
     ## 株価の範囲指定
     """)
     ymin, ymax = st.sidebar.slider(
